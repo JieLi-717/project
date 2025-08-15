@@ -1,0 +1,207 @@
+@function vw($px) {
+    @return ($px*100/750)+vw;
+}
+
+$barHeight:vw(88); //导航高度
+$stateHeight:0px; //状态栏高度(兼容安卓)
+// $stateHeight:38px; //状态栏高度(兼容苹果)
+$bg:#f1f1f1;
+$bd:#e1e1e1;
+$theme:#be0212;
+$color1:#303030;
+$color2:#606060;
+$color3:#909090;
+$pageHeight:calc(100vh);
+.one_line {
+    overflow: hidden; //超出的文本隐藏 
+    text-overflow: ellipsis; //溢出用省略号显示
+    white-space: nowrap; //溢出不换行
+}
+img{
+	vertical-align: middle;
+}
+
+.two_line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.mt40 {
+    margin-top: vw(40);
+}
+
+.mb40 {
+    margin-bottom: vw(40);
+}
+
+.mr40 {
+    margin-right: vw(40);
+}
+
+.ml40 {
+    margin-left: vw(40);
+}
+
+.mt30 {
+    margin-top: vw(30);
+}
+
+.mb30 {
+    margin-bottom: vw(30);
+}
+
+.mr30 {
+    margin-right: vw(30);
+}
+
+.ml30 {
+    margin-left: vw(30);
+}
+
+.mt20 {
+    margin-top: vw(20);
+}
+
+.mb20 {
+    margin-bottom: vw(20);
+}
+
+.mr20 {
+    margin-right: vw(20);
+}
+
+.ml20 {
+    margin-left: vw(20);
+}
+
+.mt15 {
+    margin-top: vw(15);
+}
+
+.mb15 {
+    margin-bottom: vw(15);
+}
+
+.mr15 {
+    margin-right: vw(15);
+}
+
+.ml15 {
+    margin-left: vw(15);
+}
+
+.mt10 {
+    margin-top: vw(10);
+}
+
+.mb10 {
+    margin-bottom: vw(10);
+}
+
+.mr10 {
+    margin-right: vw(10);
+}
+
+.ml10 {
+    margin-left: vw(10);
+}
+
+.pt40 {
+    padding-top: vw(40);
+}
+
+.pb40 {
+    padding-bottom: vw(40);
+}
+
+.pl40 {
+    padding-left: vw(40);
+}
+
+.pr40 {
+    padding-right: vw(40);
+}
+
+.pt30 {
+    padding-top: vw(30);
+}
+
+.pb30 {
+    padding-bottom: vw(30);
+}
+
+.pl30 {
+    padding-left: vw(30);
+}
+
+.pr30 {
+    padding-right: vw(30);
+}
+
+.pt20 {
+    padding-top: vw(20);
+}
+
+.pb20 {
+    padding-bottom: vw(20);
+}
+
+.pl20 {
+    padding-left: vw(20);
+}
+
+.pr20 {
+    padding-right: vw(20);
+}
+
+.pt15 {
+    padding-top: vw(15);
+}
+
+.pb15 {
+    padding-bottom: vw(15);
+}
+
+.pl15 {
+    padding-left: vw(15);
+}
+
+.pr15 {
+    padding-right: vw(15);
+}
+
+.pt10 {
+    padding-top: vw(10);
+}
+
+.pb10 {
+    padding-bottom: vw(10);
+}
+
+.pl10 {
+    padding-left: vw(10);
+}
+
+.pr10 {
+    padding-right: vw(10);
+}
+
+/* 正方形图片（裁剪后长宽比例一致） */
+.squire_img{position:relative;overflow: hidden;}
+.squire_img::before{content: '';padding-top: 100%;vertical-align: middle;display: block;}
+.squire_img img{position: absolute;width: 100%;height: 100%;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}
+
+ 
